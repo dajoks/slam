@@ -1,0 +1,96 @@
+<html>
+<head>
+	<title> un formulaire </title>
+</head>
+
+<body>
+formulaire de commande
+<form action ="NomduprogrammePHPquivatraiterlesdonnées.php" METHOD = "post">
+<table>
+<tr>
+<td>Votre nom</td>
+<input type="text" name="nom" value="saisissez votre nom" maxlength = "20" size="35"</td>
+</tr>
+
+<tr>
+<td>votre numero client</td>
+<td><input type="text" name="numcli" maxlength="5" size="35"></td>
+</tr>
+
+<tr>
+<td>votre mot de passe</td>
+<td><input type="password" name="mdp" maxlength="50" size="35"></td>
+</tr>
+
+<tr>
+<td>votre code postal</td>
+<td><input type="text" name="cp" maxlength="5" size="35"></td>
+</tr>
+<table border="5"
+<tr>
+
+<td> quelle pizza désirez-vous ?
+	<select>
+		<option> 4 fromages </option>
+		<option> saumon </option>
+		<option> chèvre miel </option>
+		<option> orientale </option>
+		<option> végétarienne </option>
+		<option> cannibale </option>
+	</select>
+</td>
+<td> quelle accompagnements voulez-vous ?
+	<ul>
+		<br>
+		<li><input type="checbox" name="acc1" checked > oeuf
+		<br>
+		<br>
+		<li><input type="checbox" name="acc2" checked > supplement fromage
+		<br>
+		<li><input type="checbox" name="acc3" checked > supplement olives
+	</ul>
+</td>
+</tr>
+</table>
+<br>
+vous payerez
+<br>
+<table border= "2">
+	<tr>
+		<td>
+		<ul>
+			<li><input type="radio" name="br1"> en especes
+			<li><input type="radio" name="br2"> cheque
+		</ul>
+		<td> par carte de credit
+			<ul>
+				<br>
+				<li><input type="radio" name="br3"> visa
+				<br>
+				<li><input type="radio" name="br4"> american express
+				<br>
+				<li><input type="radio" name="br5"> master card
+			</ul>
+		</td>
+	</tr>
+</table>
+
+<br>
+	pour tout commentaires, n'hésiter pas a remplir la zone de texte ci-apres :
+<table>
+<tr>
+	<td> <textarea cols ="40" rows="20"> l'addition est salee </textarea>
+	</td>
+</tr>
+<br>
+<tr>
+	<td>
+		<input type="button" name="bouton1" value= "effacer">
+	</td>
+	
+	<td>
+	<input type="button" name="bouton2" value = "envoyer">
+	</td>
+</table>
+</form>
+</body>
